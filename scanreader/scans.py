@@ -509,6 +509,7 @@ class BaseScan():
         ##########
 
         for tiff_file in self.tiff_files:
+            print('Testing print')
             
             ##########
             # Cache the tiff_file's page count
