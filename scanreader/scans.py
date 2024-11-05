@@ -381,6 +381,7 @@ class BaseScan():
     def scan_key(self):
         """ Returns the datajoint scan key associated with this scanreader object, if provided when object was created"""
         match = re.search(r'scan_key = (?P<scan_key>.*)', self.header)
+        print("MATCH: ", match)
         return ast.literal_eval(match.group('scan_key')) if match else None          
 
     @property
